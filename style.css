@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: var(--FONT-FAMILY);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+:root{
+    /* PRIMARY COLORS */
+    --LIGHT-RED: hsl(0, 100%, 67%);
+    --ORANGEY-YELLOW: hsl(39, 100%, 56%);
+    --GREEN-TEAL: hsl(166, 100%, 37%);
+    --COBALT-BLUE: hsl(234, 85%, 45%);
+
+
+    /* GRADIENTS COLORS */
+    /* BACKGROUND */
+    --LIGHT-SLATE-BLUE: hsl(252, 100%, 67%);
+    --LIGHT-ROYAL-BLUE: hsl(241, 81%, 54%);
+
+    /* CIRCLE */
+    --VIOLET-BLUE: hsla(256, 72%, 46%, 0.37);
+    --PERSIAN-BLUE: hsla(241, 72%, 46%, 1);
+
+    /* NEUTRAL COLORS */
+    --WHITE: hsl(0, 0%, 100%);
+    --PALE-BLUE: hsl(221, 100%, 96%);
+    --LIGHT-LAVENDER: hsl(241, 100%, 89%);
+    --DARK-GRAY-BLUE: hsl(224, 30%, 27%);
+
+    /* FONT SIZE (PARAGRAPH) */
+    --FONT: 18px;
+
+    /* FONT WEIGHT */
+    --FONT-WEIGHT:800;
+
+    /* FONT FAMILY */
+    --FONT-FAMILY:Hanken Grotesk;
+
+}
+
+
+.container{
+    width: 600px;
+    height: auto;
+    box-shadow: 10px 10px 10px var(--PALE-BLUE);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+/* styles for row1 */
+.row1{
+    width: 50%;
+    height: 100%;
+    border-radius: inherit;
+    background-color: var(--LIGHT-SLATE-BLUE);
+    display: flex;
+    justify-content: center;
+    flex-direction: column ;
+    align-items: center;
+    padding: 20px 0px;
+}
+.row1 h3{
+    padding: 20px;
+    color: var(--LIGHT-LAVENDER);
+}
+.row1 .score{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-color: var(--VIOLET-BLUE);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+.row1 .score h2{
+    font-weight: var(--FONT-WEIGHT);
+    color: var(--WHITE);
+    font-size: 50px;
+}
+.row1 .score h3{
+    padding-top: 0;
+    color: var(--LIGHT-LAVENDER);
+}
+.row1 h1{
+    color: var(--WHITE);
+    
+}
+.row1 p{
+    color: var(--DARK-GRAY-BLUE);
+    font-weight: 700;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* styles for row2 */
+
+.row2{
+    width: 50%;
+    height: auto;
+}
+.row2 h3{
+    color: var(--PERSIAN-BLUE);
+    padding: 29px;
+}
+.row2 .btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.row2 .btn button{
+    padding: 10px;
+    margin: 8px 29px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 8px;
+    border-radius: 8px;
+    border: 0;
+    cursor: pointer;
+}
+.row2 .btn button:first-child{
+    background-color: hsla(0, 100%, 67%, 0.295);;
+    color: var(--LIGHT-RED);
+}
+.row2 .btn button:nth-child(2){
+    background-color: hsla(39, 100%, 56%,0.295);
+    color: var(--ORANGEY-YELLOW);
+}
+.row2 .btn button:nth-child(3){
+    background-color:hsla(166, 100%, 37%,0.295) ;
+    color: var(--GREEN-TEAL);
+}
+.row2 .btn button:last-child{
+    background-color: hsla(234, 85%, 45%,0.295);
+    color: var(--COBALT-BLUE);
+}
+.row2 .btn button p{
+    padding-left: 70px;
+    font-size: 16px;
+    font-weight: var(--FONT-WEIGHT);
+    color: var(--DARK-GRAY-BLUE);
+}
+
+.row2 .btn button p span{
+    color: hsla(234, 85%, 45%,0.295);
+    font-size:small;
+    padding: 5px;
+}
+
+
+.row2 .continue{
+    padding: 15px 70px;
+    width: 80%;
+    margin:20px 30px;
+    border-radius: 20px;
+    border: 0;
+    background-color: var(--DARK-GRAY-BLUE);
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.row2 button:hover{
+    transform: translateY(-10px);
+    transition-duration: 1s;
+}
+
+
+@media screen and (max-width:375px) {
+    .container{
+        width: 600px;
+        height: auto;
+        box-shadow: none;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row1,.row2{
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); } */
